@@ -1,0 +1,329 @@
+html {
+	height: 100%;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 1em;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #C1BC7C;
+}
+
+h1 {
+	font-size: 1.5em;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 1.1em;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-weight: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input,textarea {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 0.8em;
+  resize: none;
+}
+
+.error {
+  color:red;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+.textinput {
+  margin-left:1%;
+  width:98%;
+  height: 100%;
+}
+
+.button {
+	margin-top: 5px;
+
+	box-shadow:inset 0px 1px 0px 0px #9fb4f2;
+	background-color:#7892c2;
+	border-radius:3px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#FFEDFE;
+	font-family:arial;
+	font-size:13px;
+	padding:3px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+.button:hover {
+	background-color:#476e9e;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+/*Clearing Floats*/
+.cf:before, .cf:after{
+    content:"";
+    display:table;
+}
+
+.cf:after{
+    clear:both;
+}
+
+.cf{
+    zoom:1;
+}
+
+/* searchForm text input */
+.searchForm input {
+    width: 150px;
+    height: 17px;
+    padding: 5px;
+    float: left;   
+    font: 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    background: #eee;    
+}
+
+.searchForm input:focus {
+    outline: 0;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+} 
+
+/* searchForm submit button */
+.searchForm button {
+    overflow: visible;
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 27px;
+    width: 70px;
+    color: #fff;
+    border-radius: 0 3px 3px 0; 
+	box-shadow:inset 0px 1px 0px 0px #9fb4f2;
+	background-color:#7892c2;
+	border:1px solid #4e6096;
+	color:#FFEDFE;
+	font-family:arial;
+	font-size:13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}   
+.searchForm button:hover {
+	background-color:#476e9e;
+}
+.searchForm button:active {
+	position:relative;
+	top:1px;
+} 
+
+
+#map-canvas {
+	height: 100%;
+	width:100%;
+	background-color: white;
+}
+
+.areaTop {
+	float: left;
+	width: 100%;
+	height: 50px;
+	overflow:hidden;
+	
+	background-color: #40496d;
+	border-bottom: 2px solid #182145;
+	color: #90A6B0;
+}
+
+.areaTopLeft {
+  float: left;
+  width: 300px;
+	margin-left: 20px;
+}
+
+.areaTopRight {
+  float: right;
+  margin-top:10px;
+	margin-right: 20px;
+}
+
+.areaBottom {
+	position: absolute;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    margin-top:52px;
+}
+
+.areaMain {
+	overflow: hidden;
+	position: absolute;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    margin-top:15px;
+    margin-bottom:10px;
+    margin-right:15px;
+    margin-left:15px;
+}
+
+.areaMainLogin {
+  position: relative;
+  float: left;
+  margin-left: 20px;
+  width: 250px;
+}
+
+.areaMainLoginEntry {
+  overflow: hidden;
+  margin-top: 5px;
+  width: 250px;
+}
+
+.areaMainTop {
+  float: left;
+  position: relative;
+  height: 50px;
+  width: 100%;
+}
+
+.areaMainTopLeft {
+  float: left;
+}
+
+.areaMainTopRight {
+  float: right;
+  text-align:right;
+}
+
+.areaSide {
+	float: right;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 100%;
+	width: 380px;
+	
+	background-color: #A37D9E;
+	border-left: 2px solid #46123F;
+	color: #451240;
+}
+
+.areaSideTitle {
+	height: 40px;
+	padding-left: 14px;
+}
+
+.areaSideScroll {
+	float: none;
+	padding-left: 4px;
+}
+
+.restaurantListEntry {
+	float: left;
+	overflow: hidden;
+	width: 370px;
+	padding-left: 10px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	
+	background-color: #B37D9E;
+	border-top: 1px dashed #46123F;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.restaurantListEntryLeft {
+	float: left;
+	width: 30px;
+}
+
+.restaurantListEntryMid {
+	float: left;
+	width: 240px;
+}
+
+.restaurantListEntryRight {
+	float: left;
+	width: 90px;
+}
+
+.restaurantListEntryTitle {
+	color: #451240;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.restaurantListEntryAddress {
+	font-size: 0.8em;
+	margin-left: 10px;
+}
+
+.restaurantListEntryPhone {
+	font-size: 0.8em;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.restaurantListEntryMoreContent {
+	font-size: 0.8em;
+	margin-left: 10px;
+	margin-top: 5px;
+	display: none;
+}
+
+.adminEditTable {
+	width: 430px;
+	margin-left: 50px;
+	margin-top: 20px;
+	border: solid 1px #40496d;
+	border-bottom: none;
+	background-color: #90A6B0;
+}
+
+.adminEditTableEntry {
+	width: 422px;
+	min-height: 22px;
+	padding: 4px;
+	border-bottom: solid 1px #40496d;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.adminEditTableEntryLeft {
+	width: 340px;
+	min-height: 35px;
+	float: left;
+	border-right: dashed 1px #40496d;
+}
+
+.adminEditTableEntryRight {
+	float: right;
+	width: 72px;
+	margin: 0px;
+	margin-bottom: 7px;
+}
+
+.adminEditTableEditEntry {
+	min-height: 25px;
+	width: 100%;
+	float: left;
+}
+
+.adminEditText {
+	width: 200px;
+	float: right;
+	margin-right: 20px;
+}

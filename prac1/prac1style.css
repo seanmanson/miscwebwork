@@ -1,0 +1,155 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #C1BC7C;
+}
+
+h1 {
+	font-size: 1.5em;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 1.1em;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-weight: normal;
+}
+
+#map-canvas {
+	height: 100%;
+	width:100%;
+	background-color: white;
+}
+
+.areaTop {
+	float: left;
+	width: 100%;
+	height: 50px;
+	
+	background-color: #40496d;
+	border-bottom: 2px solid #182145;
+	color: #90A6B0;
+}
+
+.areaTopTitle {
+	padding-left: 20px;
+}
+
+.areaBottom {
+	position: absolute;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    margin-top:52px;
+}
+
+.areaMain {
+	overflow: hidden;
+	position: absolute;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    margin-top:15px;
+    margin-bottom:10px;
+    margin-right:400px;
+    margin-left:15px;
+}
+
+.areaSide {
+	float: right;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 100%;
+	width: 380px;
+	
+	background-color: #A37D9E;
+	border-left: 2px solid #46123F;
+	color: #451240;
+}
+
+.areaSideTitle {
+	height: 40px;
+	padding-left: 14px;
+}
+
+.areaSideScroll {
+	float: none;
+	padding-left: 4px;
+}
+
+.restaurantListEntry {
+	float: left;
+	overflow: hidden;
+	width: 370px;
+	padding-left: 10px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	
+	background-color: #B37D9E;
+	border-top: 1px dashed #46123F;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.restaurantListEntryLeft {
+	float: left;
+	width: 30px;
+}
+
+.restaurantListEntryMid {
+	float: left;
+	width: 240px;
+}
+
+.restaurantListEntryRight {
+	float: left;
+	width: 90px;
+}
+
+.restaurantListEntryTitle {
+	color: #451240;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.restaurantListEntryAddress {
+	font-size: 0.8em;
+	margin-left: 10px;
+}
+
+.restaurantListEntryPhone {
+	font-size: 0.8em;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.restaurantListEntryMoreInfo {
+	margin-top: 5px;
+
+	box-shadow:inset 0px 1px 0px 0px #9fb4f2;
+	background-color:#7892c2;
+	border-radius:3px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#FFEDFE;
+	font-family:arial;
+	font-size:13px;
+	padding:3px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+.restaurantListEntryMoreInfo:hover {
+	background-color:#476e9e;
+}
+.restaurantListEntryMoreInfo:active {
+	position:relative;
+	top:1px;
+}

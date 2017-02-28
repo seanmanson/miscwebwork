@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>My Restaurant Map</title>
+		<link rel="stylesheet" href="prac1style.css">
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYhCBdhgYx4kwXMzLOlaWxBd18klNFAi4"></script>
+		<script type="text/javascript">
+			function initMap() {
+        var mapOptions = {
+          center: {lat: -27.458, lng: 153.034},
+          zoom: 14
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+				
+				//Restaurant markers
+				var marker1 = new google.maps.Marker({
+            map: map,
+            position: {lat: -27.4578, lng: 153.0332},
+            title:"King of Kings Seafood Restaurant",
+            icon:"http://maps.google.com/mapfiles/markerA.png"
+        });
+        var marker2 = new google.maps.Marker({
+            map: map,
+            position: {lat: -27.4589, lng: 153.0358},
+            title:"Fat Dumpling",
+            icon:"http://maps.google.com/mapfiles/markerB.png"
+        });
+        var marker3 = new google.maps.Marker({
+            map: map,
+            position: {lat: -27.4679, lng: 153.022},
+            title:"Steamed",
+            icon:"http://maps.google.com/mapfiles/markerC.png"
+        });
+        var marker4 = new google.maps.Marker({
+            map: map,
+            position: {lat: -27.4711, lng: 153.0241},
+            title:"Beijing House",
+            icon:"http://maps.google.com/mapfiles/markerD.png"
+        });
+        var marker5 = new google.maps.Marker({
+            map: map,
+            position: {lat: -27.4531, lng: 153.0391},
+            title:"Gyoza Bar Ann",
+            icon:"http://maps.google.com/mapfiles/markerE.png"
+        });
+      }
+			
+      google.maps.event.addDomListener(window, 'load', initMap);
+		</script>
+	</head>
+	<body>
+		<h1>Locations:</h1>
+		<div id="map-canvas"></div>
+	</body>
+</html>
